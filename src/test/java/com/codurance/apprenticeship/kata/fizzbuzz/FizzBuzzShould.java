@@ -8,9 +8,18 @@ public class FizzBuzzShould {
     @Test
     void returnOneWhenInputOne() {
         FizzBuzz fizzBuzz = new FizzBuzz();
+
         int inputNumber = 1;
         String output = fizzBuzz.print(inputNumber);
 
         assertEquals("1", output);
+    }
+
+    @Test
+    void returnFizzWhenInputIsThree() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        int inputNumber = 3;
+        String output = fizzBuzz.print(inputNumber);
+        assertEquals("Fizz", output);
     }
 }
