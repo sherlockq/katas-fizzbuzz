@@ -32,4 +32,11 @@ public class FizzBuzzShould {
         assertEquals("2", output);
     }
 
+    @Test
+    void returnBuzzWhenInputIs5() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String output = fizzBuzz.print(5);
+
+        assertEquals("Buzz", output);
+    }
 }
